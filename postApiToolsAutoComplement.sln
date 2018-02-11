@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "postApiToolsAutoComplement", "postApiToolsAutoComplement.csproj", "{6D29288C-D6C2-44CC-96EF-9D66A74E846A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "postApiToolsAutoComplementDLL", "postApiToolsAutoComplementDLL\postApiToolsAutoComplementDLL.csproj", "{2512C4D5-2B55-43D2-8867-E3ADA34EBF91}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6D29288C-D6C2-44CC-96EF-9D66A74E846A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D29288C-D6C2-44CC-96EF-9D66A74E846A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D29288C-D6C2-44CC-96EF-9D66A74E846A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D29288C-D6C2-44CC-96EF-9D66A74E846A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2512C4D5-2B55-43D2-8867-E3ADA34EBF91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2512C4D5-2B55-43D2-8867-E3ADA34EBF91}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2512C4D5-2B55-43D2-8867-E3ADA34EBF91}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2512C4D5-2B55-43D2-8867-E3ADA34EBF91}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FFE2834A-D66A-42B9-9201-51DB3D660884}
+	EndGlobalSection
+EndGlobal

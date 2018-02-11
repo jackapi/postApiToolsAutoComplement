@@ -8,4 +8,4 @@
 
 ### 截图
 
-[![](https://github.com/jackapi/postApiToolsAutoComplement/blob/master/images/main.png?raw=true)](https://raw.githubusercontent.com/jackapi/postApiTools/master/images/main.png)
+[![](https://github.com/jackapi/postApiToolsAutoComplement/blob/master/images/main.png?raw=true)](https://github.com/jackapi/postApiToolsAutoComplement/blob/master/images/main.png?raw=true)
