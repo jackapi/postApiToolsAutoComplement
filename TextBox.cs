@@ -21,8 +21,12 @@ namespace postApiToolsAutoComplement
         private void TextBox_Load(object sender, EventArgs e)
         {
             //AutoComplement.textlist = new string[] { "http://" };
-            richTextBox1.TextChanged += AutoComplement.RichTextBoxTextChangedVoid;
-            fastColoredTextBox.TextChanged += AutoComplement.FastColoredTextBoxTextChangedVoid;
+
+            //richTextBox1.TextChanged += AutoComplement.RichTextBoxTextChangedVoid;
+            //fastColoredTextBox.TextChanged += AutoComplement.FastColoredTextBoxTextChangedVoid;
+
+            richTextBox1.TextChanged += postApiToolsAutoComplementDLL.AutoComplement.RichTextBoxTextChangedVoid;
+            fastColoredTextBox.TextChanged += postApiToolsAutoComplementDLL.AutoComplement.FastColoredTextBoxTextChangedVoid;
         }
 
     }
