@@ -10,7 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace postApiToolsAutoComplement
+namespace postApiToolsAutoComplementDLL
 {
     public partial class Form1 : Form
     {
@@ -135,7 +135,8 @@ namespace postApiToolsAutoComplement
         /// <param name="e"></param>
         private void timer_Tick(object sender, EventArgs e)
         {
-            if (IsDisposed) {
+            if (IsDisposed)
+            {
                 this.Dispose();
             }
         }

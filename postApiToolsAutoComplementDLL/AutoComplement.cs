@@ -8,7 +8,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace postApiToolsAutoComplement
+namespace postApiToolsAutoComplementDLL
 {
     public class AutoComplement
     {
@@ -49,21 +49,10 @@ namespace postApiToolsAutoComplement
             RichTextBox rtb = (RichTextBox)obj1;
             string result = "";
             string text = rtb.Text;
-            string startText = text.Substring(0, rtb.SelectionStart);
-            string endtext = "";
-            string selectText = "";
-            if (rtb.SelectionStart != text.Length)
-            {
-                endtext = text.Replace(startText, "");
-            }
-            string[] array = System.Text.RegularExpressions.Regex.Split(startText, @"\s{1,}");
+            string[] array = text.Split(' ');
             if (array.Length >= 1)
             {
-                selectText = array[array.Length - 1];
-            }
-            else
-            {
-                selectText = "";
+                text = array[array.Length - 1];
             }
 
             if (th == null)
@@ -72,7 +61,7 @@ namespace postApiToolsAutoComplement
                 {
                     Form1 f;
                     Point p = winApi.CaretPos();
-                    f = new Form1(selectText, textlist, new Point(p.X + 10, p.Y + 20));
+                    f = new Form1(text, textlist, new Point(p.X + 10, p.Y + 20));
                     try
                     {
                         if (!f.IsDisposed)
@@ -83,9 +72,7 @@ namespace postApiToolsAutoComplement
                             {
                                 rtb.BeginInvoke(new Action(() =>
                                 {
-                                    startText = startText.Substring(0, startText.Length - selectText.Length) + result;//处理
-                                    rtb.Text = startText + endtext;
-                                    rtb.SelectionStart = startText.Length;//增加后的光标位置
+                                    rtb.Text = result;
                                 }));
                             }
                         }
@@ -110,30 +97,18 @@ namespace postApiToolsAutoComplement
             FastColoredTextBox rtb = (FastColoredTextBox)obj1;
             string result = "";
             string text = rtb.Text;
-            string startText = text.Substring(0, rtb.SelectionStart);
-            string endtext = "";
-            string selectText = "";
-            if (rtb.SelectionStart != text.Length)
-            {
-                endtext = text.Replace(startText, "");
-            }
-            string[] array = System.Text.RegularExpressions.Regex.Split(startText, @"\s{1,}");
+            string[] array = text.Split(' ');
             if (array.Length >= 1)
             {
-                selectText = array[array.Length - 1];
+                text = array[array.Length - 1];
             }
-            else
-            {
-                selectText = "";
-            }
-
             if (th == null)
             {
                 th = new System.Threading.Thread((System.Threading.ThreadStart)delegate
                 {
                     Form1 f;
                     Point p = winApi.CaretPos();
-                    f = new Form1(selectText, textlist, new Point(p.X + 10, p.Y + 20));
+                    f = new Form1(text, textlist, new Point(p.X + 10, p.Y + 20));
                     try
                     {
                         if (!f.IsDisposed)
@@ -144,9 +119,7 @@ namespace postApiToolsAutoComplement
                             {
                                 rtb.BeginInvoke(new Action(() =>
                                 {
-                                    startText = startText.Substring(0, startText.Length - selectText.Length) + result;//处理
-                                    rtb.Text = startText + endtext;
-                                    rtb.SelectionStart = startText.Length;//增加后的光标位置
+                                    rtb.Text = result;
                                 }));
                             }
                         }
