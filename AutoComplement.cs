@@ -31,6 +31,10 @@ namespace postApiToolsAutoComplement
                 "http://www.pc6.com",
                 "http://www.xiazaiba.com",
                 "http://www.xunlei.com",
+                "apizl",
+                "jackapi",
+                "yd",
+                "com",
         };
 
         /// <summary>

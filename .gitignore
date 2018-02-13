@@ -2,3 +2,5 @@
 /obj/Debug
 /postApiToolsAutoComplementDLL/obj/Debug
 /postApiToolsAutoComplementDLL/bin/Debug
+/obj/Release
+/.vs

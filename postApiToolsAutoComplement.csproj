@@ -37,6 +37,9 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>.\FastColoredTextBox.dll</HintPath>
     </Reference>
+    <Reference Include="postApiToolsAutoComplementDLL">
+      <HintPath>postApiToolsAutoComplementDLL\bin\Debug\postApiToolsAutoComplementDLL.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Design" />

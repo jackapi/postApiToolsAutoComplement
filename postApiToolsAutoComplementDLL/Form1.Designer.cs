@@ -1,4 +1,4 @@
-﻿namespace postApiToolsAutoComplement
+﻿namespace postApiToolsAutoComplementDLL
 {
     partial class Form1
     {
